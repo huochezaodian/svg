@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Svg</title>
+<style>
+	svg{
+		background-color: #ccc;
+	}
+</style>
+</head>
+<body>
+	<svg width="400" height="450" version="1.1" xmlns="http://www.w3.org/2000/svg">
+		<!-- 3次贝塞尔曲线 -->
+		<circle r="2" cx="20" cy="20" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="10" cy="10" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="40" cy="20" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="50" cy="10" fill="red" stroke="" stroke-width=""/>
+		<line x1="10" y1="10" x2="20" y2="20" stroke="red" stroke-width="1.5"/>
+		<line x1="40" y1="20" x2="50" y2="10" stroke="red" stroke-width="1.5"/>
+		<path d="M10 10 C 20 20, 40 20, 50 10" stroke="black" fill="transparent"/>
+		
+		<circle r="2" cx="10" cy="100" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="40" cy="30" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="65" cy="30" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="95" cy="100" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="125" cy="170" fill="blue" stroke="" stroke-width=""/>
+		<circle r="2" cx="150" cy="170" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="180" cy="100" fill="red" stroke="" stroke-width=""/>
+		<line x1="10" y1="100" x2="40" y2="30" stroke="red" stroke-width="1.5"/>
+		<line x1="65" y1="30" x2="95" y2="100" stroke="red" stroke-width="1.5"/>		
+		<line x1="95" y1="100" x2="125" y2="170" stroke="blue" stroke-width="1.5"/>
+		<line x1="150" y1="170" x2="180" y2="100" stroke="red" stroke-width="1.5"/>
+		<path d="M10 100 C 40 30, 65 30, 95 100 S 150 170, 180 100" stroke="black" fill="transparent"/>
+
+		<!-- 二次贝塞尔曲线 -->
+		<circle r="2" cx="10" cy="250" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="65" cy="180" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="120" cy="250" fill="red" stroke="" stroke-width=""/>
+		<path d="M 10 250, L 65 180, L 120 250" stroke="red" stroke-width="1.5" fill="transparent"/>
+		<path d="M10 250 Q 65 180 120 250" stroke="black" fill="transparent"/>
+		
+		<circle r="2" cx="10" cy="350" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="65" cy="280" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="120" cy="350" fill="red" stroke="" stroke-width=""/>
+		<circle r="2" cx="175" cy="420" fill="blue" stroke="" stroke-width=""/>
+		<circle r="2" cx="230" cy="350" fill="red" stroke="" stroke-width=""/>
+		<path d="M 10 350, L 65 280, L 120 350" stroke="red" stroke-width="1.5" fill="transparent"/>
+		<path d="M 120 350, L 175 420, L 230 350" stroke="blue" stroke-width="1.5" fill="transparent"/>
+		<path d="M10 350 Q 65 280 120 350 T 230 350" stroke="black" fill="transparent"/>
+	</svg>
+</body>
+</html>
