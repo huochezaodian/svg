@@ -1,0 +1,25 @@
+.<%=common %> {
+    font-size: <%= baseSize %>px;
+}
+
+.<%=common %>:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("<%=pngPath%>");
+    background-image: -webkit-image-set(url("<%=pngPath%>") 1x ,url("<%=svgPath%>") 2x);
+    background-repeat: no-repeat;
+    background-size: <%= relWidth %>em <%= relHeight %>em;
+}
+
+.no-svg .<%=common %>:before {
+    background-image: url("<%=pngPath%>");
+}
+
+<% _.forEach(svg, function(svgItem) { %>
+.<%=svgItem.name%>:before {
+    background-position: <%= svgItem.relPositionX %>em <%= svgItem.relPositionY %>em;
+    width: <%= svgItem.relWidth %>em;
+    height: <%= svgItem.relHeight %>em;
+}
+<% }); %>

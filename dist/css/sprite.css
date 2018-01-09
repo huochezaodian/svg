@@ -1,0 +1,30 @@
+.icon {
+    font-size: 16px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../png/sprite.png");
+    background-image: -webkit-image-set(url("../png/sprite.png") 1x ,url("../svg/sprite.svg") 2x);
+    background-repeat: no-repeat;
+    background-size: 1em 2em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../png/sprite.png");
+}
+
+
+.icon-left:before {
+    background-position: 0em 0em;
+    width: 1em;
+    height: 1em;
+}
+
+.icon-right:before {
+    background-position: 0em -1em;
+    width: 1em;
+    height: 1em;
+}

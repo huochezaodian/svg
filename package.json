@@ -1,0 +1,33 @@
+{
+  "name": "gulp-svg-sprites-icon",
+  "version": "1.0.0",
+  "description": "svg -> png -> icon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sprites": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huochezaodian/svg.git"
+  },
+  "keywords": [
+    "svg",
+    "icon"
+  ],
+  "author": "huochezaodian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huochezaodian/svg/issues"
+  },
+  "homepage": "https://github.com/huochezaodian/svg#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-filter": "^5.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-svg2png": "^2.0.2",
+    "gulp-sync": "^0.1.4"
+  }
+}

@@ -10,7 +10,8 @@
 </style>
 </head>
 <body>
-<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<!-- 图案 -->
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" version="1.1">
 	<defs>
 		<linearGradient id="Gradient1">
 		  	<stop offset="5%" stop-color="white"/>
@@ -38,6 +39,20 @@
 	<rect fill="url(#Pattern)" stroke="black" x="0" y="0" width="200" height="200"/>	
 	<rect fill="url(#Pattern1)" stroke="black" x="300" y="300" width="200" height="200"/>
 
+</svg>
+<!-- 文字 -->
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<text id="example" x="10" y="30">Hello World!</text>
+	<text x="10" y="60">
+	  	<tspan x="20" dx="-10" rotate="10" font-weight="bold" fill="red">This is bold and red</tspan>
+	  	<tref x="10" y="90" xlink:href="#example" />
+	</text>
+</svg>
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path id="my_path" d="M 20,20 C 40,40 80,40 100,20" fill="transparent" stroke="black"/>
+	<text>
+		<textPath xlink:href="#my_path">This text follows a curve.</textPath>
+	</text>
 </svg>
 </body>
 </html>
